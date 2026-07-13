@@ -142,3 +142,53 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #eee;
+}
+
+.participants p {
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Hide default bullets and tighten spacing */
+.participants ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+/* Each participant is a row with a remove button on the right */
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background: linear-gradient(90deg, #fff, #fbfbfb);
+  border: 1px solid #f0f0f0;
+}
+
+/* Remove (delete) button */
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+.remove-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
